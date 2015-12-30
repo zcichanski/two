@@ -1,0 +1,19 @@
+{
+    "name": "two",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Zbyszek Cichanski",
+            "email": "zbigniewcichanski@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Two\\": "src/"
+        }
+    }
+}
