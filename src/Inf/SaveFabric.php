@@ -20,7 +20,7 @@ class SaveFabric
             return self::$instance;
         }
         if(class_exists($className) ){
-            $object = new $className();
+            $object = $className::getInstance();
             self::$instance = $object;
             return $object;
 

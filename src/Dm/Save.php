@@ -19,6 +19,7 @@ class Save
 
     public function __construct()
     {
+
        $this->infSave =  SaveFabric::create();
     }
 

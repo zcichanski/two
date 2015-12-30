@@ -9,7 +9,7 @@
 namespace Two\Test\Inf;
 
 use Two\Inf\Cache;
-require_once '../../Inf/Cache.php';
+require_once '../../Inf/BaseCache.php';
 
 class CacheTest extends \PHPUnit_Framework_TestCase
 {

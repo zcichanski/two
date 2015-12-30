@@ -12,6 +12,11 @@ use Two\Dm\Save;
 
 require_once "env.php";
 
-echo "okk";
+echo "ok";
+
+//phpinfo();
+
 
 $cache = new Save();
+
+//var_dump($cache);

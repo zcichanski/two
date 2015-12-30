@@ -7,13 +7,20 @@
             "email": "zbigniewcichanski@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "predis/predis": "1.0.3"
+    },
     "require-dev": {
         "phpunit/phpunit": "5.1.*"
     },
     "autoload": {
         "psr-4": {
             "Two\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Two\\tests\\": "tests"
         }
     }
 }

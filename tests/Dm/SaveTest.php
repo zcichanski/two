@@ -6,10 +6,9 @@
  * Time: 22:41
  */
 
-namespace Two\tests;
+namespace Two\Tests\Dm;
 
 use Two\Dm\Save;
-use Two\Inf\SaveFabric;
 require_once '../../env_test.php';
 
 class SaveTest extends \PHPUnit_Framework_TestCase
@@ -23,6 +22,6 @@ class SaveTest extends \PHPUnit_Framework_TestCase
     public function testCreateObject()
     {
         $object = new Save();
-        $this->assertInstanceOf('Two\Inf\Cache', $object->getInfSave());
+        $this->assertInstanceOf('Two\Inf\BaseCache', $object->getInfSave());
     }
 }
