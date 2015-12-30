@@ -13,23 +13,28 @@ use Two\Inf\SaveFabric;
 class Save
 {
     /**
-     * @var \Two\Inf\Cache $infSave
+     * @var \Two\Inf\BaseCache save
      */
-    private $infSave;
+    private $save;
 
     public function __construct()
     {
 
-       $this->infSave =  SaveFabric::create();
+       $this->save =  SaveFabric::create();
     }
 
     public function saveData($key,$data)
     {
-         return $this->infSave->set($key, $data);
+         return $this->save->set($key, $data);
+    }
+
+    public function getData($key)
+    {
+
     }
 
     public function getInfSave()
     {
-        return $this->infSave;
+        return $this->save;
     }
 }

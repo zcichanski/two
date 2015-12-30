@@ -45,17 +45,4 @@ abstract class BaseCache
         }
         return self::$instance;
     }
-
-    /**
-     * @param $key
-     * @param $var
-     * @return mixed
-     */
-    public abstract function set($key, $var);
-
-    /**
-     * @param $key
-     * @return mixed
-     */
-    public abstract function get($key);
 }

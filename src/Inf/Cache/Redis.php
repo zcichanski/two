@@ -9,8 +9,9 @@
 namespace Two\Inf\Cache;
 
 use Two\Inf\BaseCache;
+use Two\Inf\Save;
 
-class Redis extends BaseCache
+class Redis extends BaseCache implements Save
 {
     /**
      * Redis constructor.
